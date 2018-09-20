@@ -1,0 +1,27 @@
+# Configuration
+#
+# Replace the following placeholders with the correct values for
+# your installation.
+#
+# search_url: The URL for performing the search
+# native_url: Link to the 'native'/human interface
+# query_params => rpp: Number of results to display
+
+defaults: &defaults
+  search_url: 'https://drum.lib.umd.edu/open-search/discover'
+  native_url: 'https://drum.lib.umd.edu/discover' 
+  # Query params should be listed in "hash" format
+  query_params:
+    query: ''
+    rpp: 3
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+staging:
+  <<: *defaults
+
+production:
+  <<: *defaults
