@@ -3,13 +3,13 @@
 # Replace the following placeholders with the correct values for
 # your installation.
 #
-# search_url: The URL for performing the search
-# native_url: Link to the 'native'/human interface
+# <SEARCH_URL>: The URL for performing an OpenSearch query
+# <NATIVE_URL>: Link to the 'native'/human interface
 # query_params => rpp: Number of results to display
 
 defaults: &defaults
-  search_url: 'https://drum.lib.umd.edu/open-search/discover'
-  native_url: 'https://drum.lib.umd.edu/discover' 
+  search_url: <SEARCH_URL>
+  native_url: <NATIVE_URL>
   # Query params should be listed in "hash" format
   query_params:
     query: ''
