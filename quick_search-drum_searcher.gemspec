@@ -16,7 +16,7 @@ Gem::Specification.new do |s|
   s.description = 'Quick Search DRUM Searcher for NCSU Quick Search.'
   s.license     = 'Apache 2.0'
 
-  s.files = Dir['{app,config,db,lib}/**/*', 'MIT-LICENSE', 'Rakefile', 'README.md']
+  s.files = Dir['{app,config,db,lib}/**/*', 'LICENSE', 'Rakefile', 'README.md']
 
   s.add_dependency 'nokogiri'
   s.add_dependency 'quick_search-core', '~> 0'
