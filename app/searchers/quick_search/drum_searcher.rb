@@ -27,7 +27,7 @@ module QuickSearch
     def total
       return '' unless @results.is_a? Nokogiri::XML::Document
 
-      node = @results.at('//opensearch:titleResults')
+      node = @results.at('//opensearch:totalResults')
       node ? node.text : ''
     end
 
