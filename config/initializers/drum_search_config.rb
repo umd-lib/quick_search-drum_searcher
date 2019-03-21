@@ -8,4 +8,4 @@ config_file = [
 ].select { |file| File.exist? file }.first
 
 QuickSearch::Engine::DRUM_CONFIG =
-  YAML.load(ERB.new(IO.read(config_file)).result, aliases: true)[Rails.env]
+  YAML.load(ERB.new(IO.read(config_file)).result)[Rails.env]
