@@ -21,5 +21,7 @@ Gem::Specification.new do |s|
   s.add_dependency 'nokogiri'
   s.add_dependency 'quick_search-core', '~> 0'
   s.add_development_dependency 'rubocop', '= 0.52.1'
-  s.add_development_dependency 'sqlite3'
+  # sqlite3 loaded for testing with the "dummy" application
+  # Limiting to v1.3.6 because v1.4 is incompatible with Rails 5.2
+  s.add_development_dependency 'sqlite3', '~> 1.3.6'
 end
