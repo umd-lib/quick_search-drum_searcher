@@ -47,7 +47,7 @@ module QuickSearch
 
       def uri
         base = URI.parse host
-        search_term = http_request_queries['uri_escaped'] || ''
+        search_term = @q || ''
         base.query = base_query_params.merge('query' => search_term).to_query
         base
       end
