@@ -14,6 +14,7 @@ module QuickSearch
 
     def results
       return @results_list if @results_list
+
       @results_list = @results.xpath('//xmlns:entry').map do |entry|
         OpenStruct.new(
           link: get_hyperlink(entry),
