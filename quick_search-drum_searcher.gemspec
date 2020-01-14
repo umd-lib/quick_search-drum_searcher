@@ -20,6 +20,7 @@ Gem::Specification.new do |s|
 
   s.add_dependency 'nokogiri'
   s.add_dependency 'quick_search-core', '~> 0'
-  s.add_development_dependency 'rubocop', '= 0.52.1'
+  s.add_development_dependency 'rubocop', '= 0.78.0'
+  s.add_development_dependency 'rubocop-rails'
   s.add_development_dependency 'sqlite3'
 end
