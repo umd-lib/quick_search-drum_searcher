@@ -1,0 +1,27 @@
+# Configuration
+#
+# Replace the following placeholders with the correct values for
+# your installation.
+#
+# <SEARCH_URL>: The URL for performing an OpenSearch query
+# <NATIVE_URL>: Link to the 'native'/human interface
+# query_params => rpp: Number of results to display
+
+defaults: &defaults
+  search_url: <SEARCH_URL>
+  native_url: <NATIVE_URL>
+  # Query params should be listed in "hash" format
+  query_params:
+    query: ''
+    rpp: 3
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+staging:
+  <<: *defaults
+
+production:
+  <<: *defaults

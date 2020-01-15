@@ -1,0 +1,16 @@
+# Localization
+#
+# Replace the following placeholders with the correct values for
+# your installation.
+#
+# <NO_RESULTS_LINK>: The link for your site when there are no results
+
+en:
+  DRUM_search:
+    display_name: "DRUM"
+    short_display_name: "DRUM"
+    search_form_placeholder: "Search DRUM"
+    module_callout: "Search DRUM"
+    error_service_message: "searching DRUM"
+    no_results_service_message: "a different search from DRUM"
+    no_results_link: "<NO_RESULTS_LINK>"
